@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap");
 
 :root {
   --paper: #f3f2ef;
@@ -9,8 +9,8 @@
   --brass: #b08d57;
   --stone: #d9d2c5;
   --deep: #151311;
-  --editorial: "Bodoni Moda", Georgia, "Times New Roman", serif;
-  --major-heading-size: clamp(42px, 5.9vw, 84px);
+  --font-main: Manrope, Inter, system-ui, sans-serif;
+  --major-heading-size: clamp(42px, 5.55vw, 80px);
 }
 
 * { box-sizing: border-box; }
@@ -19,7 +19,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Inter, system-ui, sans-serif;
+  font-family: var(--font-main);
 }
 main { overflow-x: clip; }
 button, a { font: inherit; }
@@ -52,8 +52,8 @@ img { display: block; }
   align-items: center;
   gap: 32px;
   font-size: 13px;
-  font-weight: 850;
-  letter-spacing: -0.02em;
+  font-weight: 800;
+  letter-spacing: 0.005em;
 }
 .navLeft { justify-content: flex-start; }
 .navRight { justify-content: flex-end; }
@@ -188,36 +188,38 @@ img { display: block; }
   margin: 0 0 34px;
   color: var(--muted);
   font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 0.16em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .intro h1 {
   max-width: 1140px;
   margin: 0 0 32px;
-  font-family: var(--editorial);
+  font-family: var(--font-main);
   font-size: var(--major-heading-size);
-  font-weight: 500;
+  font-weight: 650;
   line-height: 0.94;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.062em;
   text-wrap: balance;
 }
 
 .intro p:not(.introEyebrow) {
-  font-family: Inter, system-ui, sans-serif;
-  font-size: clamp(22px, 2.65vw, 38px);
-  line-height: 1.16;
-  letter-spacing: -0.045em;
-  font-weight: 400;
+  max-width: 1080px;
+  margin: 0;
   color: var(--muted);
+  font-family: var(--font-main);
+  font-size: clamp(21px, 2.35vw, 34px);
+  line-height: 1.18;
+  letter-spacing: -0.042em;
+  font-weight: 450;
 }
 .sectionLabel {
   margin-bottom: 32px;
   color: var(--muted);
   font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 0.18em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
@@ -273,17 +275,17 @@ img { display: block; }
   display: block;
   margin-bottom: 14px;
   font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.2em;
+  font-weight: 800;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 .featuredTitleBlock h2 {
   margin: 0;
-  font-family: var(--editorial);
+  font-family: var(--font-main);
   font-size: var(--major-heading-size);
-  font-weight: 500;
+  font-weight: 650;
   line-height: 0.94;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.062em;
 }
 .featuredTitleBlock p {
   max-width: 560px;
@@ -310,17 +312,17 @@ img { display: block; }
 }
 .featuredBriefCard h3 {
   margin: 0;
-  font-family: var(--editorial);
+  font-family: var(--font-main);
   font-size: var(--major-heading-size);
-  font-weight: 500;
+  font-weight: 650;
   line-height: 0.94;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.062em;
 }
 .featuredBriefCard p {
   max-width: 570px;
   margin: 22px 0 0;
   color: var(--muted);
-  font-family: Inter, system-ui, sans-serif;
+  font-family: var(--font-main);
   font-size: clamp(16px, 1.18vw, 19px);
   line-height: 1.5;
   font-weight: 500;
@@ -370,18 +372,18 @@ img { display: block; }
   justify-content: space-between;
   color: var(--muted);
   font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 0.16em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 .reviews h2 {
   max-width: 1140px;
-  margin: 0 0 56px;
-  font-family: var(--editorial);
+  margin: 0 0 42px;
+  font-family: var(--font-main);
   font-size: var(--major-heading-size);
-  font-weight: 500;
+  font-weight: 650;
   line-height: 0.94;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.062em;
 }
 .reviewStage {
   min-height: 190px;
@@ -390,18 +392,18 @@ img { display: block; }
 }
 .reviews blockquote {
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  font-size: clamp(22px, 2.65vw, 38px);
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: -0.045em;
+  font-family: var(--font-main);
+  font-size: clamp(21px, 2.35vw, 34px);
+  font-weight: 450;
+  line-height: 1.18;
+  letter-spacing: -0.042em;
 }
 .reviews blockquote footer {
   margin-top: 28px;
   color: var(--muted);
   font-size: clamp(15px, 1.3vw, 20px);
   font-weight: 900;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.005em;
 }
 
 .paperStack {
@@ -426,20 +428,21 @@ img { display: block; }
 }
 .paperStep h2 {
   margin: 0;
-  font-family: var(--editorial);
+  font-family: var(--font-main);
   font-size: var(--major-heading-size);
-  font-weight: 500;
+  font-weight: 650;
   line-height: 0.94;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.062em;
   text-transform: none;
 }
 .paperStep p {
   max-width: 760px;
   margin: 32px 0 0;
   color: var(--muted);
-  font-size: clamp(23px, 2.95vw, 42px);
-  line-height: 1.08;
+  font-size: clamp(21px, 2.55vw, 36px);
+  line-height: 1.12;
   letter-spacing: -0.042em;
+  font-weight: 450;
 }
 .mobilePaperMotionStack { display: none; }
 
@@ -456,11 +459,11 @@ img { display: block; }
 .galleryIntro h2 {
   max-width: 1100px;
   margin: 0;
-  font-family: var(--editorial);
+  font-family: var(--font-main);
   font-size: var(--major-heading-size);
-  font-weight: 500;
+  font-weight: 650;
   line-height: 0.94;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.062em;
 }
 .galleryMosaic {
   display: grid;
@@ -501,18 +504,18 @@ img { display: block; }
 .contact p {
   margin: 0 0 20px;
   color: var(--muted);
-  font-weight: 900;
-  letter-spacing: 0.16em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 .contact h2 {
   max-width: 1000px;
   margin: 0;
-  font-family: var(--editorial);
+  font-family: var(--font-main);
   font-size: var(--major-heading-size);
-  font-weight: 500;
+  font-weight: 650;
   line-height: 0.94;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.062em;
 }
 .contactLinks {
   margin-top: 56px;
@@ -562,7 +565,7 @@ img { display: block; }
 
 @media (max-width: 720px) {
   :root {
-    --major-heading-size: clamp(42px, 12vw, 60px);
+    --major-heading-size: clamp(41px, 11.4vw, 58px);
   }
 
   html, body { width: 100%; max-width: 100%; }
@@ -603,7 +606,7 @@ img { display: block; }
     font-size: clamp(10px, 2.7vw, 11.5px);
     line-height: 1;
     font-weight: 900;
-    letter-spacing: -0.055em;
+    letter-spacing: -0.015em;
     white-space: nowrap;
     will-change: transform, opacity;
     pointer-events: auto;
@@ -694,19 +697,19 @@ img { display: block; }
   .intro h1 {
     max-width: 100%;
     margin-bottom: 34px;
-    font-family: var(--editorial);
+    font-family: var(--font-main);
     font-size: var(--major-heading-size);
-    font-weight: 500;
+    font-weight: 650;
     line-height: 0.94;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.062em;
   }
   .intro p:not(.introEyebrow) {
     max-width: 100%;
-    font-family: Inter, system-ui, sans-serif;
-    font-size: clamp(20px, 5.8vw, 30px);
-    line-height: 1.16;
-    letter-spacing: -0.045em;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-size: clamp(19px, 5.25vw, 28px);
+    line-height: 1.18;
+    letter-spacing: -0.04em;
+    font-weight: 450;
   }
   .sectionLabel {
     margin-bottom: 20px;
@@ -744,11 +747,11 @@ img { display: block; }
   }
   .featuredMobileTitle h2 {
     margin: 0;
-    font-family: var(--editorial);
+    font-family: var(--font-main);
     font-size: var(--major-heading-size);
-    font-weight: 500;
+    font-weight: 650;
     line-height: 0.94;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.062em;
   }
   .featuredMobileBrief {
     position: absolute;
@@ -761,17 +764,17 @@ img { display: block; }
   }
   .featuredMobileBrief h3 {
     margin: 0;
-    font-family: var(--editorial);
+    font-family: var(--font-main);
     font-size: var(--major-heading-size);
-    font-weight: 500;
+    font-weight: 650;
     line-height: 0.94;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.062em;
   }
   .featuredMobileBrief p {
-    margin: 20px 0 0;
+    margin: 18px 0 0;
     color: var(--muted);
-    font-size: 18px;
-    line-height: 1.38;
+    font-size: 17px;
+    line-height: 1.4;
     font-weight: 500;
     letter-spacing: -0.025em;
   }
@@ -841,19 +844,19 @@ img { display: block; }
   .reviews h2 {
     max-width: 100%;
     margin-bottom: 34px;
-    font-family: var(--editorial);
+    font-family: var(--font-main);
     font-size: var(--major-heading-size);
-    font-weight: 500;
+    font-weight: 650;
     line-height: 0.94;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.062em;
   }
   .reviewStage { min-height: 220px; max-width: 100%; }
   .reviews blockquote {
-    font-family: Inter, system-ui, sans-serif;
-    font-size: clamp(20px, 5.8vw, 30px);
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: -0.045em;
+    font-family: var(--font-main);
+    font-size: clamp(19px, 5.25vw, 28px);
+    font-weight: 450;
+    line-height: 1.18;
+    letter-spacing: -0.04em;
   }
   .reviews blockquote footer { margin-top: 18px; font-size: 13px; }
   .desktopPaperStack { display: none; }
@@ -900,31 +903,32 @@ img { display: block; }
   }
   .mobilePaperMotionCard h2 {
     margin: 0;
-    font-family: var(--editorial);
+    font-family: var(--font-main);
     font-size: var(--major-heading-size);
-    font-weight: 500;
+    font-weight: 650;
     line-height: 0.94;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.062em;
     text-transform: none;
   }
   .mobilePaperMotionCard p {
     max-width: 96%;
     margin: 24px 0 0;
     color: var(--muted);
-    font-size: clamp(21px, 6.2vw, 30px);
-    line-height: 1.12;
-    letter-spacing: -0.045em;
+    font-size: clamp(20px, 5.6vw, 28px);
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+    font-weight: 450;
   }
   .immersiveGallery {
     padding: 82px 18px 96px;
   }
   .galleryIntro { padding: 0 0 38px; }
   .galleryIntro h2 {
-    font-family: var(--editorial);
+    font-family: var(--font-main);
     font-size: var(--major-heading-size);
-    font-weight: 500;
+    font-weight: 650;
     line-height: 0.94;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.062em;
   }
   .galleryMosaic {
     display: grid;
@@ -984,11 +988,11 @@ img { display: block; }
   .contact p { font-size: 10px; }
   .contact h2 {
     max-width: 100%;
-    font-family: var(--editorial);
+    font-family: var(--font-main);
     font-size: var(--major-heading-size);
-    font-weight: 500;
+    font-weight: 650;
     line-height: 0.94;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.062em;
   }
   .contactLinks {
     margin-top: 34px;
