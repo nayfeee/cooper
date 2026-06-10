@@ -411,7 +411,7 @@ export default function Home() {
 
       <section className="intro introStatement">
         <p className="introEyebrow">Blackburn & surrounding towns</p>
-        <h1>High-end bathroom renovation in Blackburn & Lancashire</h1>
+        <h1>Trusted bathroom fitters in Blackburn & Lancashire</h1>
         <p>
           A trusted family-run team specialising in full bathroom renovations, plumbing and heating — combining quality workmanship with personal service from first idea to final finish.
         </p>
